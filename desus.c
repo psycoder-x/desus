@@ -169,6 +169,8 @@ int main(int argc, char **argv) {
   // des
   des_file(input, key, decode, output);
   //
+  fclose(input);
+  fclose(output);
   return EXIT_SUCCESS;
 }
 
